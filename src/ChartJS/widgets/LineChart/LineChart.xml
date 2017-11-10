@@ -9,10 +9,10 @@
 
     <properties>
         <!-- Appearance -->
-        <property key="maxYValue" type="string" required="true" defaultValue="0">
+        <property key="maxYValue" type="string" required="false" defaultValue="">
             <caption>Maximum Y Value</caption>
             <category>Appearance</category>
-            <description>The Maximum Y value on the chart</description>
+            <description>The Maximum Y value on the chart. Leave empty to set to the max value in your dataset</description>
         </property>
         <property key="width" type="integer" required="true" defaultValue="500">
             <caption>Width</caption>
@@ -276,8 +276,8 @@
             <description>The attribute to store the base64 encoding of the chart when rendered.</description>
             <attributeTypes>
                 <attributeType name="String"/>
-            </attributeTypes>      
-        </property>             
+            </attributeTypes>
+        </property>       
         <!-- Settings -->
         <property key="responsive" type="boolean" required="true" defaultValue="true">
             <caption>Responsive</caption>
@@ -420,6 +420,5 @@
             <category>Settings Line Chart</category>
             <description>The scale line color.</description>
         </property>
-   
     </properties>
 </widget>

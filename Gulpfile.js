@@ -1,4 +1,4 @@
-// Generated on 2017-11-09 using generator-mendix 2.2.3 :: git+https://github.com/mendix/generator-mendix.git
+// Generated on 2017-05-10 using generator-mendix 2.2.3 :: git+https://github.com/mendix/generator-mendix.git
 /*jshint -W069,-W097*/
 "use strict";
 
@@ -26,10 +26,10 @@ var pkg = require("./package.json"),
     paths = widgetBuilderHelper.generatePaths(pkg),
     xmlversion = widgetBuilderHelper.xmlversion;
 
-gulp.task("default", ['build'], function() {
+gulp.task("default", ["build"], function() {
     gulp.watch("./src/**/*", ["compress"]);
     gulp.watch("./src/**/*.js", ["copy:js"]);
-    gulp.watch("./src/**/*.html", ["copy:html"])
+    gulp.watch("./src/**/*.html", ["copy:html"]);
 });
 
 gulp.task("clean", function () {
